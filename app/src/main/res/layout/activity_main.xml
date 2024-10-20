@@ -5,12 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="down_bannner"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/upbanner"
         android:layout_width="427dp"
         android:layout_height="202dp"
+        android:contentDescription="up_banner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/upbanner" />
@@ -19,6 +21,7 @@
         android:id="@+id/downbanner"
         android:layout_width="426dp"
         android:layout_height="201dp"
+        android:contentDescription="down_bannner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/dwbanner" />
@@ -30,6 +33,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
+        android:contentDescription="logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/upbanner"
@@ -38,7 +42,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="223dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="85dp"
