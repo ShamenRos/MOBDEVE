@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/menubanner"
+        android:layout_width="416dp"
+        android:layout_height="126dp"
+        android:contentDescription="menu_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menubanner" />
+
+    <!-- Optional: Adjust margin as needed -->
+
+    <ImageView
+        android:id="@+id/menuIcon"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="menuIcon"
+        app:layout_constraintStart_toStartOf="@+id/menubanner"
+        app:layout_constraintTop_toTopOf="@+id/menubanner"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <ImageView
+        android:id="@+id/genconbtn"
+        android:layout_width="156dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="107dp"
+        android:contentDescription="genconbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menubanner"
+        app:srcCompat="@drawable/genconbtn" />
+
+    <ImageView
+        android:id="@+id/irbtn"
+        android:layout_width="156dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="37dp"
+        android:contentDescription="irbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menubanner"
+        app:srcCompat="@drawable/irbtn" />
+
+    <ImageView
+        android:id="@+id/inqbtn"
+        android:layout_width="156dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="77dp"
+        android:contentDescription="inqbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genconbtn"
+        app:srcCompat="@drawable/inqbtn" />
+
+    <ImageView
+        android:id="@+id/rrbtn"
+        android:layout_width="156dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="37dp"
+        android:contentDescription="rrbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/irbtn"
+        app:srcCompat="@drawable/rrbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
